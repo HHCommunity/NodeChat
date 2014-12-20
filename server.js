@@ -1,4 +1,4 @@
-var route, app, server, io;
+var app, route, server, io;
 
 app = require('koa')();
 route = require('koa-route');
