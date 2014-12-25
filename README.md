@@ -1,6 +1,6 @@
 NodeChat
 ========
-
+* Currently using large chunks of code from: https://github.com/DanialK/ReactJS-Realtime-Chat (unfortunately, there is no license provided so we are mentioning it in the README for now)
 * Support multiple rooms
 
 To decide
