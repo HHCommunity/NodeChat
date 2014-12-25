@@ -5,10 +5,10 @@ NodeChat
 
 To implement (in order of priority)
 ===================================
-* Messages history (will probably store it a MongoDB database)
+* Messages history (will probably store it in a MongoDB database)
 * Rooms
 * Typing status
-* Replace user lists storage (currently JavaScript objects) with a proper database (probably Redis) 
+* Replace user lists storage (currently JavaScript objects) with a proper database storage (probably Redis) 
 
 To decide
 =========
