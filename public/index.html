@@ -3,10 +3,25 @@
 <head>
 	<title>NodeChat</title>
 	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <script src="http://fb.me/react-0.12.2.js"></script>
-<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script type="text/jsx" src="chat.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+<script>
+  var socket = io.connect();
+  var converter = new Showdown.converter();
+  var Users = [];
+  var Messages = [];
+  var lastUser = '';
+</script>
+
+<script src="js/userslist.js"></script>
+<script src="js/message.js"></script>
+<script src="js/messagelist.js"></script>
+<script src="js/messageform.js"></script>
+<script src="js/changenameform.js"></script>
+<script src="js/chatapp.js"></script>

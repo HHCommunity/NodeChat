@@ -1,7 +1,9 @@
 var userNames = (function () {
-  var names = {};
+  var names, claim, getGuestName, getElementBy, free;
+  
+  names = {};
 
-  var claim = function (name) {
+  claim = function (name) {
     if (!name || names[name]) {
       return false;
     } else {
@@ -11,7 +13,7 @@ var userNames = (function () {
   };
 
   // Find the lowest unused "guest" name and claim it
-  var getGuestName = function () {
+  getGuestName = function () {
     var name, nexUserId;
 
     nexUserId = 1;
@@ -23,16 +25,15 @@ var userNames = (function () {
   };
 
   // Serialize claimed names as an array
-  var get = function () {
+  get = function () {
     var res = [];
     for (user in names) {
       res.push(user);
     }
-
     return res;
   };
 
-  var free = function (name) {
+  free = function (name) {
     if (names[name]) {
       delete names[name];
     }
